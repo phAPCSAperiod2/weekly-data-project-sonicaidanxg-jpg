@@ -14,7 +14,7 @@ public class App {
         // -------------------------------------------------------------
         // TODO 1: Create a Scanner for user input
         // -------------------------------------------------------------
-
+        System.out.println("awoeigfhaewij");
 
         // -------------------------------------------------------------
         // TODO 2: Give information about your program
