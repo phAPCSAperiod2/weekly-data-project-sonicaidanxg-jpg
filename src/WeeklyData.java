@@ -88,7 +88,7 @@ public class WeeklyData {
      *
      * @return the maximum value
      */
-    public double getMax() {
+    public double getMaximum() {
         // TODO: Assume the first value is the current maximum
         double max = data[0];
         // TODO: Loop through the rest of the array and update max as needed
@@ -110,7 +110,7 @@ public class WeeklyData {
      *
      * @return the minimum value
      */
-    public double getMin() {
+    public double getMinimum() {
         // TODO: Assume the first value is the current minimum
         double min = data[0];
         // TODO: Loop through the rest of the array and update min as needed
