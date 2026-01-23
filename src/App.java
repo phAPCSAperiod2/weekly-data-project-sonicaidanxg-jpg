@@ -14,6 +14,7 @@ public class App {
         // -------------------------------------------------------------
         // TODO 1: Create a Scanner for user input
         // -------------------------------------------------------------
+        
         Scanner scanner = new Scanner(System.in);
 
         // -------------------------------------------------------------
@@ -22,6 +23,7 @@ public class App {
         // -------------------------------------------------------------
         System.out.println("Welcome to the Weekly Sleep Tracker!");
         System.out.print("What is your target number of sleep hours per night? ");
+        
         double targetSleep = scanner.nextDouble();
 
         // -------------------------------------------------------------
@@ -29,6 +31,7 @@ public class App {
         //         Use an appropriate data type (int or double)
         //         Name the array weekData
         // -------------------------------------------------------------
+        
         double[] weekData = new double[7];
 
 
@@ -42,14 +45,23 @@ public class App {
         //         - Re-prompt if the value is invalid
         // -------------------------------------------------------------
         for (int i = 0; i < weekData.length; i++) {
+         
             double input;
+         
             do {
+         
                 System.out.print("Enter hours of sleep for day " + (i + 1) + ": ");
+         
                 input = scanner.nextDouble();
+         
                 if (input < 0) {
+         
                     System.out.println("Invalid input. Please enter a non-negative value.");
+         
                 }
+         
             } while (input < 0);
+         
             weekData[i] = input;
         }
 
